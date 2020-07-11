@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="format-detection" content="telephone=no" />
@@ -11,7 +11,41 @@
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <title>NRGHost</title>
+    <style type="text/css">
+        .iw_poi_title {
+            color: #CC5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word
+        }
+
+        span.BMap_Marker.BMap_noprint {
+            position: absolute !important;
+            padding: 0px !important;
+            margin: 0px !important;
+            border: 0px !important;
+            cursor: pointer !important;
+            width: 50% !important;
+            height: 50% !important;
+            left: 133px !important;
+            top: 120px !important;
+            z-index: -7417222 !important;
+            background: url("img/icon-84.png") !important;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
+
 <body>
 
     <!-- LOADER -->
@@ -27,7 +61,9 @@
     <header>
         <div class="container">
             <div id="logo-wrapper">
-                <div class="cell-view"><a id="logo" href="index.html"><img src="img/logo.png" alt="" /></a></div>
+                <div class="cell-view">
+                    <a id="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+                </div>
             </div>
             <div class="open-icon">
                 <span></span>
@@ -230,15 +266,16 @@
             </div>
 
             <!-- BLOCK "TYPE 6" -->
-            <!-- <div>
-                <div id="map-canvas" data-lat="43.653226" data-lng="-79.383184" data-zoom="3">
+            <div>
+                <div style="width:300px;height:300px;border:#ccc solid 1px;" id="dituContent"></div>
+                <!-- <div id="map-canvas" data-lat="43.653226" data-lng="-79.383184" data-zoom="3">
 
                 </div>
                 <div class="addresses-block">
                     <a data-lat="43.653226" data-lng="-107.383184" data-string="1. Here is some address or email or phone or something else..."></a>
                     <a data-lat="57.653226" data-lng="-77.383184" data-string="2. Here is some address or email or phone or something else..."></a>
-                </div>
-            </div> -->
+                </div> -->
+            </div>
 
             <!-- BLOCK "TYPE 3" -->
             <div class="block type-3">
@@ -302,7 +339,8 @@
             <div class="row">
                 <div class="footer-entry col-md-3">
                     <h3 class="title">NRGHost</h3>
-                    <div class="text">Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla nisl blandit. Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla nisl blandit. Praesent nisl sapien, semper quis convallis et, tempus vitae dolor.</div>
+                    <div class="text">Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla nisl blandit. Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla nisl blandit. Praesent nisl
+                        sapien, semper quis convallis et, tempus vitae dolor.</div>
                 </div>
                 <div class="footer-entry col-md-2 col-sm-3 col-xs-6">
                     <h3 class="title">NRGHost</h3>
@@ -332,7 +370,7 @@
                     <div class="text">Curabitur porttitor nisi ac nunc ornare, in fringilla nisl blandit. Sed quam metus, faucibus et pulvinar ut, volutpat ut orci. Integer sollicitudin cursus massa, non laoreet risus pretium eget.</div>
                     <div class="subscription-form">
                         <form>
-                            <input type="email" required value="" placeholder="Your Email..."/>
+                            <input type="email" required value="" placeholder="Your Email..." />
                             <input type="submit" value="" />
                         </form>
                     </div>
@@ -380,25 +418,25 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-line-entry col-md-3 col-sm-6 col-xs-12">
-                        <img src="img/icon-22.png" alt=""/>
+                        <img src="img/icon-22.png" alt="" />
                         <div class="content">
                             <div class="cell-view">24/7 Custtomer Support</div>
                         </div>
                     </div>
                     <div class="footer-line-entry col-md-3 col-sm-6 col-xs-12">
-                        <img src="img/icon-23.png" alt=""/>
+                        <img src="img/icon-23.png" alt="" />
                         <div class="content">
                             <div class="cell-view"><a href="mailto:support@NRGHost.com">support@NRGHost.com</a></div>
                         </div>
                     </div>
                     <div class="footer-line-entry col-md-3 col-sm-6 col-xs-12">
-                        <img src="img/icon-24.png" alt=""/>
+                        <img src="img/icon-24.png" alt="" />
                         <div class="content">
                             <div class="cell-view"><a href="tel:+48 555 8753 005">+48 555 8753 005</a></div>
                         </div>
                     </div>
                     <div class="footer-line-entry col-md-3 col-sm-6 col-xs-12">
-                        <img src="img/icon-25.png" alt=""/>
+                        <img src="img/icon-25.png" alt="" />
                         <div class="content">
                             <div class="cell-view"><a href="#">Live Chat</a></div>
                         </div>
@@ -409,7 +447,7 @@
     </footer>
 
     <!-- 37 - THEME CONFIG -->
-    <div class="theme-config">
+    <!-- <div class="theme-config">
         <div class="title">Main Color:</div>
         <div class="colours-wrapper">
             <div class="entry active" style="background-color: #ff6c3a;" data-colour=""></div>
@@ -418,7 +456,7 @@
             <div class="entry" style="background-color: #ba68c8;" data-colour="colour-3"></div>
         </div>
         <div class="open"><img src="img/icon-134.png" /></div>
-    </div>
+    </div> -->
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -429,6 +467,113 @@
     <script src="js/map.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/wow.init.js"></script>
+    <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap() {
+            createMap(); //创建地图
+            setMapEvent(); //设置地图事件
+            addMapControl(); //向地图添加控件
+            addMarker(); //向地图中添加marker
+        }
 
+        //创建地图函数：
+        function createMap() {
+            var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+            var point = new BMap.Point(114.520654, 37.086088); //定义一个中心点坐标
+            map.centerAndZoom(point, 18); //设定地图的中心点和坐标并将地图显示在地图容器中
+            window.map = map; //将map变量存储在全局
+        }
+
+        //地图事件设置函数：
+        function setMapEvent() {
+            map.disableDragging(); //禁用地图拖拽事件
+            map.disableScrollWheelZoom(); //禁用地图滚轮放大缩小，默认禁用(可不写)
+            map.disableDoubleClickZoom(); //禁用鼠标双击放大
+            map.disableKeyboard(); //禁用键盘上下左右键移动地图，默认禁用(可不写)
+        }
+
+        //地图控件添加函数：
+        function addMapControl() {}
+
+        //标注点数组
+        var markerArr = [{
+            title: "成都中正亚信企业服务有限公司",
+            content: "邢台市桥东区海大商务中心2109",
+            point: "114.520587|37.086117",
+            isOpen: 0,
+            icon: {
+                w: 23,
+                h: 25,
+                l: 0,
+                t: 21,
+                x: 9,
+                lb: 12
+            }
+        }];
+        //创建marker
+        function addMarker() {
+            for (var i = 0; i < markerArr.length; i++) {
+                var json = markerArr[i];
+                var p0 = json.point.split("|")[0];
+                var p1 = json.point.split("|")[1];
+                var point = new BMap.Point(p0, p1);
+                var iconImg = createIcon(json.icon);
+                var marker = new BMap.Marker(point, {
+                    icon: iconImg
+                });
+                var iw = createInfoWindow(i);
+                var label = new BMap.Label(json.title, {
+                    "offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)
+                });
+                marker.setLabel(label);
+                map.addOverlay(marker);
+                label.setStyle({
+                    borderColor: "#808080",
+                    color: "#333",
+                    cursor: "pointer"
+                });
+
+                (function() {
+                    var index = i;
+                    var _iw = createInfoWindow(i);
+                    var _marker = marker;
+                    _marker.addEventListener("click", function() {
+                        this.openInfoWindow(_iw);
+                    });
+                    _iw.addEventListener("open", function() {
+                        _marker.getLabel().hide();
+                    })
+                    _iw.addEventListener("close", function() {
+                        _marker.getLabel().show();
+                    })
+                    label.addEventListener("click", function() {
+                        _marker.openInfoWindow(_iw);
+                    })
+                    if (!!json.isOpen) {
+                        label.hide();
+                        _marker.openInfoWindow(_iw);
+                    }
+                })()
+            }
+        }
+        //创建InfoWindow
+        function createInfoWindow(i) {
+            var json = markerArr[i];
+            var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+            return iw;
+        }
+        //创建一个Icon
+        function createIcon(json) {
+            var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), {
+                imageOffset: new BMap.Size(-json.l, -json.t),
+                infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+                offset: new BMap.Size(json.x, json.h)
+            })
+            return icon;
+        }
+
+        initMap(); //创建和初始化地图
+    </script>
 </body>
+
 </html>
