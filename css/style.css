@@ -193,15 +193,15 @@
 	}
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-/* 05 - HEADER */
+/* 05 - HEADER */       /*198  199  204  221*/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-	header{-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.08); -moz-box-shadow: 0 1px 3px rgba(0,0,0,.08); box-shadow: 0 1px 3px rgba(0,0,0,.08); height: 122px; position: fixed; left: 0; top: 0; width: 100%; background: #fff; z-index: 10; -webkit-backface-visibility: hidden;}
-	#logo-wrapper{width: 100px; height: 122px; float: left;}
+	header{-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.08); -moz-box-shadow: 0 1px 3px rgba(0,0,0,.08); box-shadow: 0 1px 3px rgba(0,0,0,.08); height: 100px; position: fixed; left: 0; top: 0; width: 100%; background: #fff; z-index: 10; -webkit-backface-visibility: hidden;}
+	#logo-wrapper{width: 100px; height: 100px; float: left;}
 	#logo img{display: block; max-width: 90px; height: auto;}
 	.header-container{margin-left: 110px;}
 	.header-left{float: left; width: 50%;}
 	.header-right{float: right; width: 50%;}
-	nav{margin: 53px 0 0 0;}
+	nav{margin: 41px 0 0 0;}
 	.menu-entry{float: left; position: relative; margin-right: 30px;}
 	.menu-entry:last-child{margin-right: 0;}
 	.menu-entry a{font-size: 14px; line-height: 20px; color: #232c3b; font-family: 'regular', sans-serif, Arial; float: left; padding-bottom: 12px;}
@@ -218,7 +218,7 @@
 	.menu-entry:hover{z-index: 1;}
 	.menu-entry:hover .submenu{max-height: 300px;}
 
-	.header-right{text-align: right; font-size: 14px; line-height: 18px; color: #232c3b; padding-top: 37px;}
+	.header-right{text-align: right; font-size: 14px; line-height: 18px; color: #232c3b; padding-top: 41px;}
 	.header-right a.telephone-link{color: #232c3b;}
 	.header-right a.telephone-link:hover{color: #ff6c3a;}
 	.header-right a.link{color: #232c3b;}
@@ -306,7 +306,7 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 06 - FOOTER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-	footer{background: #232c3b; color: #c6cad2; font-size: 14px; line-height: 22px; font-family: 'regular', sans-serif, Arial; padding-top: 40px;}
+	footer{background: #232c3b; color: #c6cad2; font-size: 14px; line-height: 22px; font-family: 'regular', sans-serif, Arial; /*padding-top: 40px;*/}
 	footer ul{list-style: none;}
 	footer ul li{padding-bottom: 3px;}
 	footer ul li a{color: #c6cad2;}
@@ -346,11 +346,11 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 07 - SIMPLE BLOCK STRUCTURE */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-	.block-header{text-align: center; margin-bottom: 40px;}
+	.block-header{text-align: center; margin-bottom: 60px;}
 	.block-header .title{font-size: 40px; line-height: 40px; color: #232c3b; font-family: 'black', sans-serif, Arial; margin-bottom: 15px;}
 	.block-header .title span{color: #6a7483;}
 	.block-header .text{font-size: 18px; line-height: 24px; color: #6a7483; font-family: 'regular', sans-serif, Arial;}
-	.block, .block.type-8.style-1{padding: 60px 0 2drag.png0px 0; background-color: #fff; background-size: cover; background-position: center center; position: relative;}
+	.block, .block.type-8.style-1{padding: 60px 0 20px 0; background-color: #fff; background-size: cover; background-position: center center; position: relative;}
 	.block:nth-child(2n), .block:nth-child(2n).type-8.style-1{background-color: #f9f9f9;}
 	.block-button-container{text-align: center; padding-bottom: 60px; position: relative;}
 	.block-button-container .button-description{font-size: 24px; color: #c6cad2; line-height: 30px; margin-bottom: 15px;}
@@ -472,7 +472,7 @@
 	.block.type-5 .swiper-slide:after{content: ""; width: 1px; height: 100%; position: absolute; top: 0; left: 0; background: #2e3849;}
 	.block.type-5 .swiper-slide:first-child:after{display: none;}
 	.block.type-5 .swiper-slide img{display: inline-block; position: relative; max-width: 100%; height: auto;}
-	.block.type-5 .swiper-container{padding-bottom: 40px;}
+	.block.type-5 .swiper-container{padding-bottom: 60px;}
 	@media (max-width: 991px) {
 		.block.type-5 .swiper-container{padding-bottom: 30px;}
 	}
